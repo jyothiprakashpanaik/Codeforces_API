@@ -1,0 +1,1 @@
+web: gunicorn codeforces_api.wsgi --log-file -

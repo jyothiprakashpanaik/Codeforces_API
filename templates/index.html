@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>
+
+  <code>
+
+    go to  >> /get_json?username=xxx&from=YYYY-MM-DD|HH:MM:SS&to=YYYY-MM-DD|HH:MM:SS&cnt=x&list=xxA,xxB,xxC..
+    <br><br>
+
+    <b>Api guid in response you will get json</b>
+
+    <table>
+      <tr>
+        <th>Parameters</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td>valid userhandle</td>
+      </tr>
+      <tr>
+        <td>from</td>
+        <td>strating time of the contest</td>
+      </tr>
+      <tr>
+        <td>to</td>
+        <td>ending time of the contest</td>
+      </tr>   
+      <tr>
+        <td>cnt</td>
+        <td>No. of Problems in the contest</td>
+      </tr> 
+      <tr>
+        <td>list</td>
+        <td>Problems id list  [coma as delimiter]</td>
+      </tr> 
+    </table>
+
+  </code>
+  
+  <br><br>
+
+  <b><em>** Or else fill the form with all required detalis</em></b>
+
+  <br><br>
+
+  <form action="get_json" method="get">
+  Enter Username : <input type='text' name='username' placeholder='ex: saiKumar' required><br><br>
+  Enter form (utc) : <input type='text' name='from' placeholder='YYYY-MM-DD|HH:MM:SS' required><br><br>
+  Enter to (utc) : <input type='text' name='to' placeholder='YYYY-MM-DD|HH:MM:SS' required><br><br>
+  Enter No of Problems : <input type='text' name='cnt' placeholder='ex: 3' required><br><br>
+  Enter ProblemList [coma as delimiter]: <input type='text' name='list' placeholder='ex: 11A,11B,11C ..' required><br><br>
+  <input type='submit'>
+  </form>
+  
+</body>
+</html>
